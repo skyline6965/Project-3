@@ -1,4 +1,4 @@
-#### Studi-Joe (WIP)
+## Studi-Joe (WIP)
 
 ### Team Members (roles tbd)
   * Joe Williams -- 
