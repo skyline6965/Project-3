@@ -34,6 +34,6 @@ Our goal is to help small business look better than big business.
 
 ### Layout
 
-![img1](/imges/project-3proposalimg1.jpg)
-![img2](/imges/project-3proposalimg2.jpg)
-![img3](/imges/project-3proposalimg3.jpg)
+![img1](./imges/project-3proposalimg1.jpg)
+![img2](./imges/project-3proposalimg2.jpg)
+![img3](./imges/project-3proposalimg3.jpg)
