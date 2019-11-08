@@ -30,7 +30,6 @@ Being a small business today is hard. Standing out among big businesses and othe
   * ReactJS
   * Bootstrap / Bulma
   * Google Calender or another calender package
-  * React Infinite Scroll
   * Passport or another form of login
   * Axios
   * MongoDB / Mongoose
