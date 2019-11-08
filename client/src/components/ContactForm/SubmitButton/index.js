@@ -1,8 +1,8 @@
 import React from "react"
 
-function SubmitButton() {
+function SubmitButton(props) {
   return(
-    <button type="submit" id="contact-submit-btn">Send</button>
+    <button {...props} type="submit" id="contact-submit-btn">Send</button>
   )
 }
 

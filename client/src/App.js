@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from './components/Nav'
-import logo from './logo.svg';
+import Home from "./pages/home";
 import './App.css';
+
 
 function App() {
   return (
-      <Navbar />
+    <Home/>
 
     // <div className="App">
     //   <header className="App-header">
