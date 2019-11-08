@@ -43,6 +43,7 @@ class Form extends React.Component {
   render(){
     return (
       <form id="contact-form">
+        <label></label>
         <input type="email" id="contact-email" name="from_email" value={this.state.from_email} onChange={this.handleInputChange}>
 
         </input>
