@@ -3,13 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "emailjs-com": "^2.4.0",
     "passport": "^0.4.0",
-=======
     "bulma": "^0.8.0",
     "express": "^4.17.1",
->>>>>>> e812b7ab2c8422a3da9d5127e5715d864553f596
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0"
