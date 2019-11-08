@@ -3,7 +3,10 @@ import Form from "../Form";
 
 function FormContainer() {
   return(
-    <Form />
+    <div>
+      <h2>Contact SkyLine</h2>
+      <Form />
+    </div>
   )
 }
 
