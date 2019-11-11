@@ -2,6 +2,7 @@ import React from "react";
 import SubmitButton from "../SubmitButton";
 import emailjs from "emailjs-com";
 
+
 class Form extends React.Component {
 
   state = {
@@ -49,6 +50,7 @@ class Form extends React.Component {
 
   render() {
     return (
+      <section>
       <form id="contact-form">
         <label for="from_email">Email:
         <input type="email" id="contact-email" name="from_email" value={this.state.from_email} onChange={this.handleInputChange}>
@@ -74,6 +76,7 @@ class Form extends React.Component {
         </textarea>
         <SubmitButton onClick={this.sendEmail} />
       </form>
+      </section>
     )
   }
 }

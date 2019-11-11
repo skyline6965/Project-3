@@ -18,5 +18,25 @@
 }
 
 .App-link {
-  color: #09d3ac;
+  color: hsl(209, 99%, 48%);
+}
+
+
+/* Joe CSS */
+body {
+  background: black;
+}
+
+.navbar {
+  background:hsl(0, 0%, 7%);
+}
+.hero-body {
+    background: black url(images/SkylineStudio1.jpg) center / cover;
+    opacity: .8;
+    text-align: center;
+}
+
+.title {
+  font-size: 6rem;
+  color: gray;
 }
