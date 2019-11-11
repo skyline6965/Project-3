@@ -1,7 +1,7 @@
 import React from "react";
 import SubmitButton from "../SubmitButton";
 import emailjs from "emailjs-com";
-
+import "./style.css";
 
 class Form extends React.Component {
 
@@ -57,23 +57,21 @@ class Form extends React.Component {
 
           </input>
         </label>
-        <hr />
         <label for="from_name">Name:
         <input type="text" id="contact-name" name="from_name" value={this.state.from_name} onChange={this.handleInputChange}>
 
           </input>
         </label>
-        <hr />
         <label for="subject">Subject:
         <input type="text" id="email-subject" name="subject" value={this.state.subject} onChange={this.handleInputChange}>
 
           </input>
         </label>
-        <hr />
-        <label for="message">Message: </label>
+        <label for="message">Message: 
         <textarea id="message" name="message" value={this.state.message} onChange={this.handleInputChange}>
 
         </textarea>
+        </label>
         <SubmitButton onClick={this.sendEmail} />
       </form>
       </section>
