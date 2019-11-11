@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 
 
 // Define middleware here
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true, useNewUrlParser: true }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -15,6 +15,6 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/studiodb");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/studiodb");
 
 app.listen(PORT, () => console.log("Listening at http://localhost:" + PORT));

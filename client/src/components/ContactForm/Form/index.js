@@ -52,26 +52,39 @@ class Form extends React.Component {
     return (
       <section>
       <form id="contact-form">
-        <label for="from_email">Email:
-        <input type="email" id="contact-email" name="from_email" value={this.state.from_email} onChange={this.handleInputChange}>
+        <div className="form-line">
+          <label for="from_email">Email:
+          <input type="email" id="contact-email" name="from_email" value={this.state.from_email} onChange={this.handleInputChange}>
 
           </input>
-        </label>
-        <label for="from_name">Name:
-        <input type="text" id="contact-name" name="from_name" value={this.state.from_name} onChange={this.handleInputChange}>
+
+          </label>        
+          </div>
+        <div className="form-line">
+          <label for="from_name">Name:
+          <input type="text" id="contact-name" name="from_name" value={this.state.from_name} onChange={this.handleInputChange}>
 
           </input>
-        </label>
-        <label for="subject">Subject:
-        <input type="text" id="email-subject" name="subject" value={this.state.subject} onChange={this.handleInputChange}>
+
+
+          </label>
+        </div>
+        <div className="form-line">
+          <label for="subject">Subject:
+          <input type="text" id="email-subject" name="subject" value={this.state.subject} onChange={this.handleInputChange}>
 
           </input>
-        </label>
-        <label for="message">Message: 
-        <textarea id="message" name="message" value={this.state.message} onChange={this.handleInputChange}>
 
-        </textarea>
-        </label>
+
+          </label>        
+        </div>
+        <div className="form-line">
+          <label for="message">Message: 
+          <textarea id="message" name="message" value={this.state.message} onChange={this.handleInputChange}>
+
+          </textarea>
+          </label>
+        </div>
         <SubmitButton onClick={this.sendEmail} />
       </form>
       </section>
