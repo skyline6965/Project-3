@@ -7,18 +7,20 @@
     "bulma": "^0.8.0",
     "emailjs-com": "^2.4.0",
     "express": "^4.17.1",
+    "if-env": "^1.0.4",
     "moment": "^2.24.0",
     "mongoose": "^5.7.8",
     "passport": "^0.4.0",
     "react": "^16.11.0",
     "react-big-calendar": "^0.23.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "win-node-env": "^0.4.0"
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore client/* \" \"npm run client\"",
+    "start:dev": "concurrently \"nodemon server.js --ignore client/*\" \"npm run client\"",
     "client": "cd client && npm run start",
     "build": "react-scripts build",
     "test": "react-scripts test",

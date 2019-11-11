@@ -5,6 +5,7 @@ import FormContainer from "../components/ContactForm/FormContainer";
 function Home(){
     return(
     <div>
+        Hello
         <Navbar/>
         <FormContainer/>
 
