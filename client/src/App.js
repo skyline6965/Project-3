@@ -3,7 +3,8 @@ import Home from "./pages/home";
 import './App.css';
 
 
-function App() {
+class App extends React.Component{
+  render() {
   return (
     <Home/>
 
@@ -25,5 +26,7 @@ function App() {
     // </div>
   );
 }
+}
+
 
 export default App;
