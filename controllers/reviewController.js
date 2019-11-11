@@ -1,16 +1,37 @@
-const router = require("express").Router();
-const reviewController = require("../../controllers/reviewController");
+const db = require("../models");
 
-// Matches with "/api/reviews"
-router.route("/")
-  .get(reviewController.findAll)
-  .post(reviewController.create);
-
-// Matches with "/api/reviews/:id"
-router
-  .route("/:id")
-  .get(reviewController.findById)
-  .put(reviewController.update)
-  .delete(reviewController.remove);
-
-module.exports = router;
+// Defining methods for the reviewController
+module.exports = {
+  findAll: function(req, res) {
+    db.Review
+      .find(req.query)
+      .sort({ date: -1 })
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
+  findById: function(req, res) {
+    db.Review
+      .findById(req.params.id)
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
+  create: function(req, res) {
+    db.Review
+      .create(req.body)
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
+  update: function(req, res) {
+    db.Review
+      .findOneAndUpdate({ _id: req.params.id }, req.body)
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
+  remove: function(req, res) {
+    db.Review
+      .findById({ _id: req.params.id })
+      .then(dbModel => dbModel.remove())
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  }
+};
