@@ -1,5 +1,5 @@
 module.exports = {
-    User = require("./user"),
-    Review = require("./review"),
-    Appointments = require("./appointment")
+    User: require("./user"),
+    Review: require("./review"),
+    Appointment: require("./appointment")
 };

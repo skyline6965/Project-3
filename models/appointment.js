@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const appointmentSchema = new Schema({
     name: String,
-    date: { type: date, required: true},
+    date: { type: Date, required: true},
     time: { type: String, required: true}
     
 });
