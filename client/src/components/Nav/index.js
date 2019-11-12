@@ -1,17 +1,20 @@
 import React from "react";
-import 'bulma/css/bulma.css'
+import { Link } from "react-router-dom";
+import 'bulma/css/bulma.css';
+
 
 function Navbar() {
-    return(
-    <div>
+
+	return(
+    	<div>
         <nav className="navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
-                <a className="navbar-item" href="#">
+                <Link className="navbar-item" to="/">
                     <strong><p>Skyline Studios</p></strong>
                     {/* <img src="" width="112" height="28"></img> */}
-                </a>
+                </Link>
 
-                <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" href="/">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -20,68 +23,67 @@ function Navbar() {
 
             <div id="navbarBasicExample" className="navbar-menu">
                 <div className="navbar-start">
-                    <a className="navbar-item">
+                    <Link className="navbar-item" to="/home">
                         Home
-                    </a>
-
-                    <a className="navbar-item">
+                    </Link>
+                    <Link className="navbar-item" to="/studio">
                         Studio
-                    </a>
-                    <a className="navbar-item">
+                    </Link>
+                    <Link className="navbar-item" to="/lessons">
                         Lessons
-                    </a>
+                    </Link>
 
                 <div className="navbar-item has-dropdown is-hoverable">
-                    <a className="navbar-link">
+                    <Link className="navbar-link" to="/calendar">
                         Contact
-                    </a>
+                    </Link>
 
                         <div className="navbar-dropdown">
-                            <a className="navbar-item">
+                            <Link className="navbar-item" to="/about">
                                 About
-          </a>
-                            <a className="navbar-item">
+          									</Link>
+                            <Link className="navbar-item" to="/jobs">
                                 Jobs
-          </a>
-                            <a className="navbar-item">
+          									</Link>
+                            <Link className="navbar-item" to="/calendar">
                                 Contact
-          </a>
+          									</Link>
                             <hr className="navbar-divider"></hr>
-                                <a className="navbar-item">
+                                <a className="navbar-item" href="/">
                                     Report an issue
-          </a>
-        </div>
+																	</a>
+        									</div>
                         </div>
                     </div>
 
                     <div className="navbar-end">
                         <div className="navbar-item">
                             <div className="buttons">
-                                <a className="button is-link">
+                                <Link className="button is-link" to="/register">
                                     <strong>Sign up</strong>
-                                </a>
-                                <a className="button is-light">
+                                </Link>
+                                <Link className="button is-light" to="/login">
                                     Log in
-          </a>
+         												</Link>
                             </div>
                         </div>
                     </div>
                 </div>
-           
-        </nav>
+          	</nav>
 
 
         <section class="hero is-link is-fullheight-with-navbar has-background-black">
-  <div className="hero-body">
-    <div className="container">
-        {/* <img src="https://images.squarespace-cdn.com/content/v1/50187db624acce5741aad553/1504285359881-EALV96CVEPU3HQ6LB2QD/ke17ZwdGBToddI8pDm48kKKBYw7RkZ4eykKqfKUvHod7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Ud9Ke1lvTF9Z4NYnQC_mTW5zDYQ53IbTNfUUbEMZUmRiJvwGh1qtNWvMhYKnvaKhbA/DSC01039.png"></img> */}
-      <p className="title" >
-        Skyline Studios
-      </p>
-    </div>
-  </div>
-</section>
-    </div>)
+  				<div className="hero-body">
+    				<div className="container">
+        			{/* <img src="https://images.squarespace-cdn.com/content/v1/50187db624acce5741aad553/1504285359881-EALV96CVEPU3HQ6LB2QD/ke17ZwdGBToddI8pDm48kKKBYw7RkZ4eykKqfKUvHod7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Ud9Ke1lvTF9Z4NYnQC_mTW5zDYQ53IbTNfUUbEMZUmRiJvwGh1qtNWvMhYKnvaKhbA/DSC01039.png"></img> */}
+      				<p className="title" >
+        				Skyline Studios
+      				</p>
+    				</div>
+  				</div>
+				</section>
+    	</div>
+	)
 }
 
 export default Navbar;

@@ -1,11 +1,17 @@
-label {
+.form-line {
   display: block;
   font-size: 2em;
+  width: 100%;
   margin: 2% auto;
+}
+
+label {
+  text-align: left;
 }
 
 input, textarea {
   margin-left: 2%;
+  text-align: right;
 }
 
 input {
