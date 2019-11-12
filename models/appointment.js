@@ -5,7 +5,6 @@ const appointmentSchema = new Schema({
     name: String,
     date: { type: Date, required: true},
     time: { type: String, required: true}
-    
 });
 
 const Appointment = mongoose.model("Appointment", appointmentSchema);
