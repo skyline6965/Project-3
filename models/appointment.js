@@ -2,9 +2,11 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const appointmentSchema = new Schema({
-    name: String,
-    date: { type: Date, required: true},
-    time: { type: String, required: true}
+    title: String,
+    start: { type: Date, required: true},
+    end: { type: Date, required: true},
+    allDay: {type: Boolean, require: true},
+    resource: {type: String}
     
 });
 

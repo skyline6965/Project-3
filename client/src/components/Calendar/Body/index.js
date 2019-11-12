@@ -6,7 +6,6 @@ import axios from "axios";
 moment.locale("en-GB");
 
 const localizer = momentLocalizer(moment);
-const myEventsList = [] //empty array for now
 class CalendarContainer extends React.Component{
   constructor(props) {
     super(props)
@@ -18,7 +17,7 @@ class CalendarContainer extends React.Component{
   componentDidMount(){
   
     let self = this
-    axios.get()
+    axios.get("/api/appointments")
     .then(response => {
     
     let appointments = response.data;
@@ -43,7 +42,7 @@ class CalendarContainer extends React.Component{
     return(
       <Calendar
         localizer={localizer}
-        events={myEventsList}
+        events={this.state.cal_events}
         startAccessor="start"
         endAccessor="end"
         style={{height: 500, width:700}} //style placeholder so calendar will render. Will move to css file. 
