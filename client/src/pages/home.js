@@ -1,9 +1,22 @@
 import React from "react";
 import Navbar from "../components/Nav";
+import FormContainer from "../components/ContactForm/FormContainer";
+import CalendarContainer from "./calendar.js";
 
 
 function Home(){
     return(
+
+//     <Router>
+//         <div>
+//             <Navbar/>
+//             <Route exact path="/contact" component={FormContainer}/>
+//             <Route exact path="/schedule" component={CalendarContainer}/>
+//             <Route exact path="/login" component={Login}/>
+//             <Route exact path="/signup" component={Signup}/>
+//         </div>
+//     </Router>
+
     	<div>
         <Navbar/>
         <section class="hero is-link is-fullheight-with-navbar has-background-black">

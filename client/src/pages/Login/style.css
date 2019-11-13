@@ -1,0 +1,12 @@
+
+html {
+    background-color: black;
+}
+.customForm {
+    padding: 20px 400px;
+    margin: 50px;
+}
+
+input {
+    text-align: left;
+}
