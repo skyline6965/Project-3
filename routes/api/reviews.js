@@ -13,4 +13,9 @@ router
   .put(reviewController.update)
   .delete(reviewController.remove);
 
+//Joe-Test
+// router
+//   .route("/test")
+//   .render("Test Working!");
+
 module.exports = router;

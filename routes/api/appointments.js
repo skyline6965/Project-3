@@ -4,7 +4,8 @@ const appController = require("../../controllers/appController");
 // Matches with "/api/appointments"
 router.route("/")
   .get(appController.findAll)
-  .post(appController.create);
+  .post(appController.create)
+ ;
 
 // Matches with "/api/appointments/:id"
 router
