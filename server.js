@@ -17,6 +17,11 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/studiodb");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/studiodb",
+{
+    useCreateIndex: true,
+    useNewUrlParser: true
+});
+
 
 app.listen(PORT, () => console.log("Listening at http://localhost:" + PORT));
