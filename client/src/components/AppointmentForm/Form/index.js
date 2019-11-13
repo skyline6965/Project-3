@@ -13,7 +13,7 @@ class AptForm extends React.Component {
   }
 
   makeAppointment = event => {
-    event.preventDefault()
+    //event.preventDefault()
     var appointment_object = {
       "title": this.state.title,
       "start": this.state.start,
@@ -21,13 +21,11 @@ class AptForm extends React.Component {
       // "allDay": this.state.allDay,
       // "resource": this.state.resource
     }
-    axios.post("api/appointments",appointment_object)
-    .then(function (response) {
+    axios.post("api/appointments", appointment_object).then(response =>  {
       console.log(response);
+    }).catch(err => {
+      console.log(err);
     })
-    .catch(function (error) {
-      console.log(error);
-    });
 
     this.setState({
       title: "",

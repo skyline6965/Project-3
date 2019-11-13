@@ -4,7 +4,7 @@ import Navbar from "../components/Nav";
 
 function Home(){
     return(
-    <div>
+    	<div>
         <Navbar/>
         <section class="hero is-link is-fullheight-with-navbar has-background-black">
   				<div className="hero-body">
@@ -16,7 +16,7 @@ function Home(){
     				</div>
   				</div>
 				</section>
-    </div>
+    	</div>
     )
 }
 
