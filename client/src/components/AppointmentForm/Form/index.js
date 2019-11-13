@@ -8,8 +8,8 @@ class AptForm extends React.Component {
     title: "",
     start: "",
     end: "",
-    allDay: "",
-    resource: ""
+    //allDay: false,
+    //resource: ""
   }
 
   makeAppointment = event => {
@@ -18,17 +18,23 @@ class AptForm extends React.Component {
       "title": this.state.title,
       "start": this.state.start,
       "end": this.state.end,
-      "allDay": this.state.allDay,
-      "resource": this.state.resource
+      // "allDay": this.state.allDay,
+      // "resource": this.state.resource
     }
-    axios.post("api/appointments")
+    axios.post("api/appointments",appointment_object)
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
 
     this.setState({
       title: "",
       start: "",
       end: "",
-      allDay: "",
-      resource: ""
+      //allDay: "",
+      //resource: ""
     })
   }
 
@@ -52,7 +58,7 @@ class AptForm extends React.Component {
           </label>        
           </div>
         <div className="form-line">
-          <label for="start">Start Time:
+          <label for="start">Start Time and date YYYY-MM-DD 24hr time:
           <input type="text" id="start" name="start" value={this.state.start} onChange={this.handleInputChange}>
 
           </input>
@@ -61,20 +67,13 @@ class AptForm extends React.Component {
           </label>
         </div>
         <div className="form-line">
-          <label for="end">Subject:
+          <label for="end">End Time and date YYYY-MM-DD 24hr time:
           <input type="text" id="end" name="end" value={this.state.end} onChange={this.handleInputChange}>
 
           </input>
 
 
           </label>        
-        </div>
-        <div className="form-line">
-          <label for="allDay">Will This Be An All Day Event?: 
-          <textarea id="boolean" name="allDay" value={this.state.allDay} onChange={this.handleInputChange}>
-
-          </textarea>
-          </label>
         </div>
         <SubmitButton onClick={this.makeAppointment} />
       </form>
