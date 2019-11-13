@@ -33,12 +33,15 @@ class Signup extends React.Component {
       [name]: value
     });
 
+    var newUser = {
+      name: this.state.name,
+      email: this.state.email,
+      password: this.state.password
+    }
+
     console.log(this.state.name);
 
-    axios.post('/', {
-      name: this.state.name,
-      password: this.state.password
-    })
+    axios.post('/api/users', newUser)
     .then(response => {
       console.log(response)
       if(response.data){
