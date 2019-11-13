@@ -2,6 +2,8 @@ import React from "react";
 import 'bulma/css/bulma.css';
 import "./style.css"
 import axios from "axios";
+import { Redirect } from "react-router-dom";
+import Navbar from "../../components/Nav";
 
 class Signup extends React.Component {
 
@@ -9,7 +11,21 @@ class Signup extends React.Component {
     name: "",
     email: "",
     phone: "",
-    password: ""
+    password: "",
+    redirect: false,
+    redirectTo: ""
+  }
+
+  setRedirect = () => {
+    this.setState({
+      redirect: true
+    })
+  }
+
+  renderRedirect = () => {
+    if(this.state.redirect){
+      return <Redirect to={this.state.redirectTo}/>
+    }
   }
 
   handleChange = (event) => {
@@ -46,9 +62,11 @@ class Signup extends React.Component {
       console.log(response)
       if(response.data){
         console.log("Successful Signup!")
+        this.setRedirect();
         this.setState({
           redirectTo: "/login"
         })
+        this.renderRedirect();
       }
       else{
         console.log("Signup error");
@@ -63,6 +81,8 @@ class Signup extends React.Component {
 
   render() {
     return (
+      <div>
+      <Navbar />
       <div className="customForm">
         <div className="field">
           <label className="label">Name</label>
@@ -155,6 +175,8 @@ class Signup extends React.Component {
             <button className="button is-link is-light">Cancel</button>
           </div>
         </div>
+      </div>
+      {this.renderRedirect()}
       </div>
     )
   }
