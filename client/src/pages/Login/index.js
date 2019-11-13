@@ -1,11 +1,14 @@
 import React from "react";
 import 'bulma/css/bulma.css';
-import "./style.css"
+import "./style.css";
+import Navbar from "../../components/Nav";
 
 
 
 function Login() {
     return (
+        <div>
+        <Navbar />
         <div className="customForm">
             <div className="field">
                 <label className="label">Name</label>
@@ -22,19 +25,19 @@ function Login() {
             </div>
 
             <div className="field is-grouped is-grouped-centered">
-  <p className="control">
-    <a className="button is-link">
-      Submit
-    </a>
-  </p>
-  <p className="control">
-    <a className="button is-light">
-      Cancel
-    </a>
-  </p>
-</div>
+              <p className="control">
+                <a className="button is-link">
+                  Submit
+                </a>
+              </p>
+              <p className="control">
+                <a className="button is-light">
+                  Cancel
+                </a>
+              </p>
+            </div>
         </div>
-
+      </div>
     )
 }
 
