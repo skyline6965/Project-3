@@ -3,7 +3,7 @@ import Home from "./pages/home";
 import Calendar from "./pages/calendar";
 import About from "./pages/about";
 import Login from "./pages/Login";
-import Register from "./pages/register";
+// import Register from "./pages/register";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import './App.css';
 
