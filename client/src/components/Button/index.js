@@ -8,3 +8,5 @@ function Button({ children }){
         >{props}</button>
     )
 }
+
+export default Button;
