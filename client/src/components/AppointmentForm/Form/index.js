@@ -21,7 +21,11 @@ class AptForm extends React.Component {
       "allDay": this.state.allDay,
       "resource": this.state.resource
     }
-    axios.post("api/appointments")
+    axios.post("api/appointments", appointment_object).then(response =>  {
+      console.log(response);
+    }).catch(err => {
+      console.log(err);
+    })
 
     this.setState({
       title: "",
