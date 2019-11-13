@@ -9,10 +9,10 @@ const mongoose = require("mongoose");
 // Define middleware here
 app.use(express.urlencoded({ extended: true, useNewUrlParser: true }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'client/public')))
+// app.use(express.static(path.join(__dirname, 'client/build')))
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+  app.use(express.static(path.join(__dirname, "client/build")));
 }
 // Add routes, both API and view
 app.use(routes);
