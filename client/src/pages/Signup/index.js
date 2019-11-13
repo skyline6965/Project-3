@@ -13,7 +13,7 @@ class Signup extends React.Component {
     phone: "",
     password: "",
     redirect: false,
-    redirectTo: ""
+    redirectTo: "/login"
   }
 
   setRedirect = () => {
@@ -61,11 +61,9 @@ class Signup extends React.Component {
     .then(response => {
       console.log(response)
       if(response.data){
-        console.log("Successful Signup!")
+        console.log("Successful Signup!");
+        alert("Successful Signup!");
         this.setRedirect();
-        this.setState({
-          redirectTo: "/login"
-        })
         this.renderRedirect();
       }
       else{
