@@ -9,11 +9,13 @@ import AptContainer from "../components/AppointmentForm/AptContainer";
 function CalendarPage() {
   return(
     <div>
+    
       <Navbar />
-      <CalendarContainer />
-      <Login/>
       <FormContainer />
+      <Login/>
+      <CalendarContainer />
       <AptContainer />
+
     </div>
   )
 };
