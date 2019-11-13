@@ -2,10 +2,71 @@ import React from "react";
 import 'bulma/css/bulma.css';
 import "./style.css";
 import Navbar from "../../components/Nav";
+import { Redirect } from "react-router-dom";
+import axios from "axios";
 
 
 
-function Login() {
+class Login extends React.Component {
+  state = {
+    name: "",
+    password: "",
+    redirect: false,
+    redirectTo: "/"
+  }
+
+  setRedirect = () => {
+    this.setState({
+      redirect: true
+    })
+  }
+
+  renderRedirect = () => {
+    if (this.state.redirect) {
+      return <Redirect to={this.state.redirectTo} />
+    }
+  }
+
+  handleChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  }
+
+  sendHome = event => {
+    this.setRedirect();
+    this.renderRedirect();
+  }
+
+  handleSubmit = event => {
+  event.preventDefault();
+  const loginInfo = {
+    name: this.state.name,
+    password: this.state.password
+  }
+  console.log(loginInfo);
+    
+  axios.get("/api/users/" + loginInfo.name)
+    .then(response => {
+      console.log(response)
+      if(loginInfo.password === response.data.password){
+        alert("Login Successful.");
+        this.setRedirect();
+        this.renderRedirect();
+      } else {
+        alert("Incorrect Password");
+        this.setState({
+          password: ""
+        })
+      }
+    })
+    .catch(err => {
+      console.log(err)
+    })
+  }
+
+  render(){
     return (
         <div>
         <Navbar />
@@ -13,32 +74,33 @@ function Login() {
             <div className="field">
                 <label className="label">Name</label>
                 <div className="control">
-                    <input className="input" type="text" placeholder="e.g Alex Smith"></input>
+                <input className="input" type="text" placeholder="e.g Alex Smith" name="name" value={this.state.name} onChange={this.handleChange}></input>
                 </div>
             </div>
 
             <div className="field">
-                <label className="label">Email</label>
+                <label className="label">Password</label>
                 <div className="control">
-                    <input className="input" type="email" placeholder="e.g. alexsmith@gmail.com"></input>
+                    <input className="input" type="password" placeholder="Your password..." name="password" value={this.state.password} onChange={this.handleChange}></input>
                 </div>
             </div>
 
             <div className="field is-grouped is-grouped-centered">
               <p className="control">
-                <a className="button is-link">
+                <button className="button is-link" onClick={this.handleSubmit}>
                   Submit
-                </a>
+                </button>
               </p>
               <p className="control">
-                <a className="button is-light">
+                <button className="button is-light" onClick={this.sendHome}>
                   Cancel
-                </a>
+                </button>
               </p>
             </div>
         </div>
       </div>
     )
+  }
 }
 
 
