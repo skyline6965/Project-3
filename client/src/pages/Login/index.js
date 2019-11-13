@@ -47,10 +47,10 @@ class Login extends React.Component {
   }
   console.log(loginInfo);
     
-  axios.get("/api/users/" + loginInfo.name)
+  axios.get("/api/users/login/" + loginInfo.name)
     .then(response => {
       console.log(response)
-      if(loginInfo.password === response.data.password){
+      if(loginInfo.password === response.data[0].password){
         alert("Login Successful.");
         this.setRedirect();
         this.renderRedirect();
@@ -98,6 +98,7 @@ class Login extends React.Component {
               </p>
             </div>
         </div>
+      {this.renderRedirect()}
       </div>
     )
   }
