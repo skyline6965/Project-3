@@ -1,10 +1,11 @@
 import React from "react";
+import "./style.css";
 
 function CarouselImage(props){
   return (
-    <li>
+    <div>
       <img src={props.image} alt="Joe's Studio"/>
-    </li>
+    </div>
   )
 }
 
