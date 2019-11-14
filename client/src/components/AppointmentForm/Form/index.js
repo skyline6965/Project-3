@@ -49,15 +49,15 @@ class AptForm extends React.Component {
       <form id="contact-form">
         <div className="form-line">
           <label for="title">About:
-          <input type="text" id="title" name="title" value={this.state.title} onChange={this.handleInputChange}>
+          <input className='input' type="text" id="title" name="title" value={this.state.title} onChange={this.handleInputChange}>
 
           </input>
 
           </label>        
           </div>
         <div className="form-line">
-          <label for="start">Start Time and date YYYY-MM-DD 24hr time:
-          <input type="text" id="start" name="start" value={this.state.start} onChange={this.handleInputChange}>
+          <label for="start">Start Time and date:
+          <input className='input' type="text" id="start" placeholder='YYYY-MM-DD 24hr time' name="start" value={this.state.start} onChange={this.handleInputChange}>
 
           </input>
 
@@ -65,8 +65,8 @@ class AptForm extends React.Component {
           </label>
         </div>
         <div className="form-line">
-          <label for="end">End Time and date YYYY-MM-DD 24hr time:
-          <input type="text" id="end" name="end" value={this.state.end} onChange={this.handleInputChange}>
+          <label for="end">End Time and date:
+          <input className='input' type="text" id="end" placeholder='YYYY-MM-DD 24hr time' name="end" value={this.state.end} onChange={this.handleInputChange}>
 
           </input>
 
