@@ -51,10 +51,10 @@ class Form extends React.Component {
   render() {
     return (
       <section>
-      <form id="contact-form">
+      <form  id="contact-form">
         <div className="form-line">
           <label for="from_email">Email:
-          <input type="email" id="contact-email" name="from_email" value={this.state.from_email} onChange={this.handleInputChange}>
+          <input className='input' type="email" id="contact-email" name="from_email" value={this.state.from_email} onChange={this.handleInputChange}>
 
           </input>
 
@@ -62,7 +62,7 @@ class Form extends React.Component {
           </div>
         <div className="form-line">
           <label for="from_name">Name:
-          <input type="text" id="contact-name" name="from_name" value={this.state.from_name} onChange={this.handleInputChange}>
+          <input className='input' type="text" id="contact-name" name="from_name" value={this.state.from_name} onChange={this.handleInputChange}>
 
           </input>
 
@@ -71,7 +71,7 @@ class Form extends React.Component {
         </div>
         <div className="form-line">
           <label for="subject">Subject:
-          <input type="text" id="email-subject" name="subject" value={this.state.subject} onChange={this.handleInputChange}>
+          <input className='input' type="text" id="email-subject" name="subject" value={this.state.subject} onChange={this.handleInputChange}>
 
           </input>
 
@@ -80,7 +80,7 @@ class Form extends React.Component {
         </div>
         <div className="form-line">
           <label for="message">Message: 
-          <textarea id="message" name="message" value={this.state.message} onChange={this.handleInputChange}>
+          <textarea className='textarea' id="message" name="message" value={this.state.message} onChange={this.handleInputChange}>
 
           </textarea>
           </label>

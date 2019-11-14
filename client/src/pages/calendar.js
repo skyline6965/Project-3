@@ -11,15 +11,25 @@ function CalendarPage() {
     <div>
     
       <Navbar />
-      <FormContainer />
-      <div className='tile is-parent calendar'>
-        <CalendarContainer />
-      </div>
+      <div className='form-color'>
+      <section className='hero is-dark'>
+        <div className= 'hero-body'>
+          <div className= 'container calendar'>
+            
+              <CalendarContainer />
+           
+          </div>
+        </div>
+      </section>
+      <hr></hr>
+        <FormContainer />
+        <hr></hr>
       <div>
         <AptContainer />
       </div>
       
 
+    </div>
     </div>
   )
 };
