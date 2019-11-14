@@ -4,40 +4,32 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const routes = require("./routes");
 const mongoose = require("mongoose");
-const session = require("express-sessions");
+
+//sessions
+const session = require("express-session");
 const passport = require("passport");
 
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true, useNewUrlParser: true }));
 app.use(express.json());
-// app.use(express.static(path.join(__dirname, 'client/build')))
-// Serve up static assets (usually on heroku)
+
+//session
+app.use(session({
+  secret:'scooby-doo',
+  resave: true, //required
+  saveUninitialized: true //required
+}))
+
+//passport
+app.use(passport.initialize());
+app.use(passport.session())
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
 }
 // Add routes, both API and view
 app.use(routes);
-
-//sessions
-app.use(session({
-  secret:'scooby-doo',
-  resave: false, //required
-  saveUninitialized: false //required
-}))
-
-app.use((req,res,next) => {
-  console.log(req.session);
-  next();
-})
-
-//passport
-
-app.use(passport.initialize());
-
-app.use(passport.session())
-
-
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/studiodb",
 {

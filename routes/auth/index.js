@@ -1,7 +1,9 @@
 const router = require("express").Router();
-const passport = require("passport");
+const passport = require("../../config/passport");
 
-router.route("/")
-  .post((req, res, next) => {
-    passport.authenticate('local');
-  })
+// /auth/login
+router
+  .route("/login")
+  .post(passport.authenticate('local', {successRedirect: "/", failureRedirect: "/login", failureFlash: true}))
+
+module.exports = router;
