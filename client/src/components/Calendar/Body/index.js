@@ -45,7 +45,7 @@ class CalendarContainer extends React.Component{
         events={this.state.cal_events}
         startAccessor="start"
         endAccessor="end"
-        style={{height: 500, width:700}} //style placeholder so calendar will render. Will move to css file. 
+        style={{height: 750, width:950}} //style placeholder so calendar will render. Will move to css file. 
       />
     )
   }
