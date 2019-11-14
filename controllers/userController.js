@@ -39,6 +39,18 @@ module.exports = {
             .then(dbModel => dbModel.remove())
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
+    },
+    login: function (username, password, done) {
+        db.User.find({username: username, password: password}, (err, user) => {
+            if(err){
+                return done(err);
+            } else if(!user) {
+                return done(null, false, {message: 'incorrect username'});
+            } else if (!user.checkPassword(password)) {
+                return done(null, false, {message: 'incorrect password'});
+            }
+            return done(null, user);
+        })
     }
 };
 
