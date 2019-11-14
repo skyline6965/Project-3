@@ -8,18 +8,18 @@ import '../App.css';
 function SubmitRequest() {
   return(
     <div>
-    
-      <Navbar />
-      <div className='form-color'>
-          <FormContainer />
-        <hr></hr>
-      <div>
-        <AptContainer />
+    <Navbar />
+    <div className="columns is-multiline is-mobile">
+    <div className="column is-one-half">
+    <AptContainer />
+    </div>
+      <div className="column is-one-half">
+       <FormContainer />
       </div>
-      
-
     </div>
     </div>
+ 
+  
   )
 };
 
