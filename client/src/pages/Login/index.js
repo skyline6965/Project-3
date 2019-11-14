@@ -9,7 +9,7 @@ import axios from "axios";
 
 class Login extends React.Component {
   state = {
-    name: "",
+    username: "",
     password: "",
     redirect: false,
     redirectTo: "/"
@@ -42,28 +42,20 @@ class Login extends React.Component {
   handleSubmit = event => {
   event.preventDefault();
   const loginInfo = {
-    name: this.state.name,
+    username: this.state.username,
     password: this.state.password
   }
   console.log(loginInfo);
     
-  axios.get("/api/users/login/" + loginInfo.name)
+  axios.post("/auth/login", loginInfo)
     .then(response => {
+      console.log("you passed")
       console.log(response)
-      if(loginInfo.password === response.data[0].password){
-        alert("Login Successful.");
-        this.setRedirect();
-        this.renderRedirect();
-      } else {
-        alert("Incorrect Password");
-        this.setState({
-          password: ""
-        })
-      }
     })
-    .catch(err => {
-      console.log(err)
-    })
+    // .catch(err => {
+    //   console.log("FUCKMEEEE");
+    //   console.log(err)
+    // })
   }
 
   render(){
@@ -74,7 +66,7 @@ class Login extends React.Component {
             <div className="field">
                 <label className="label">Name</label>
                 <div className="control">
-                <input className="input" type="text" placeholder="e.g Alex Smith" name="name" value={this.state.name} onChange={this.handleChange}></input>
+                <input className="input" type="text" placeholder="e.g Alex Smith" name="username" value={this.state.username} onChange={this.handleChange}></input>
                 </div>
             </div>
 
