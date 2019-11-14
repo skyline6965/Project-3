@@ -62,11 +62,11 @@ class Signup extends React.Component {
       console.log(response)
       if(response.data){
         console.log("Successful Signup!")
-        this.setRedirect();
         this.setState({
+          redirect:true,
           redirectTo: "/login"
         })
-        this.renderRedirect();
+        // this.renderRedirect();
       }
       else{
         console.log("Signup error");

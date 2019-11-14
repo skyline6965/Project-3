@@ -7,6 +7,9 @@ const userSchema = new Schema({
     password: { type: String, required: true }    
 });
 
+// Do validation for password here
+
+
 const User = mongoose.model("User", userSchema);
 
 module.exports = User;

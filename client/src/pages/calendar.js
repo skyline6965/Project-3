@@ -12,8 +12,10 @@ function CalendarPage() {
     
       <Navbar />
       <FormContainer />
-      <Login/>
+      {/* <Login/> */}
       <CalendarContainer />
+      <br></br>
+      <br></br>
       <AptContainer />
 
     </div>

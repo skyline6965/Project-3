@@ -10,16 +10,25 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 
 function Home(){
     return(
-    <Router>
         <div>
             <Navbar/>
-            <Route exact path="/contact" component={FormContainer}/>
-            <Route exact path="/schedule" component={CalendarContainer}/>
-            <Route exact path="/login" component={Login}/>
-            <Route exact path="/signup" component={Signup}/>
         </div>
-    </Router>
     )
 }
+
+
+// function Home(){
+//     return(
+//     <Router>
+//         <div>
+//             <Route exact path="/" component={Navbar}/>
+//             <Route exact path="/contact" component={FormContainer}/>
+//             <Route exact path="/schedule" component={CalendarContainer}/>
+//             <Route exact path="/login" component={Login}/>
+//             <Route exact path="/signup" component={Signup}/>
+//         </div>
+//     </Router>
+//     )
+// }
 
 export default Home;
