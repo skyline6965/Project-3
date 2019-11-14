@@ -2,9 +2,9 @@ import React from "react";
 import 'bulma/css/bulma.css'
 import Navbar from "../components/Nav"
 import CalendarContainer from "../components/Calendar/Body"
-import Login from "../pages/Login"
 import FormContainer from "../components/ContactForm/FormContainer";
 import AptContainer from "../components/AppointmentForm/AptContainer";
+import '../App.css';
 
 function CalendarPage() {
   return(
@@ -12,11 +12,13 @@ function CalendarPage() {
     
       <Navbar />
       <FormContainer />
-      {/* <Login/> */}
-      <CalendarContainer />
-      <br></br>
-      <br></br>
-      <AptContainer />
+      <div className='tile is-parent calendar'>
+        <CalendarContainer />
+      </div>
+      <div>
+        <AptContainer />
+      </div>
+      
 
     </div>
   )

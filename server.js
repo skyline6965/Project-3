@@ -14,7 +14,6 @@ require ("./config/passport");
 // Define middleware here
 app.use(express.urlencoded({ extended: true, useNewUrlParser: true }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'client/public')))
 
 app.use(cookieParser());
 app.use(bodyParser());
@@ -26,9 +25,10 @@ app.use(
 )
 app.use(passport.session());
 
+// app.use(express.static(path.join(__dirname, 'client/build')))
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+  app.use(express.static(path.join(__dirname, "client/build")));
 }
 
 //sessions (Setup for Passport-Joe)
@@ -38,6 +38,11 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/studiodb");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/studiodb",
+{
+    useCreateIndex: true,
+    useNewUrlParser: true
+});
+
 
 app.listen(PORT, () => console.log("Listening at http://localhost:" + PORT));
