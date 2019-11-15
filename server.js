@@ -4,6 +4,11 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const routes = require("./routes");
 const mongoose = require("mongoose");
+const session = require('express-session')
+var bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
+const passport = require("passport");
+require ("./config/passport");
 
 //sessions
 const session = require("express-session");
@@ -28,6 +33,11 @@ app.use(passport.session())
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
 }
+
+//sessions (Setup for Passport-Joe)
+
+
+
 // Add routes, both API and view
 app.use(routes);
 
