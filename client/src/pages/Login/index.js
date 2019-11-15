@@ -65,10 +65,11 @@ class Login extends React.Component {
   render(){
     return (
         <div>
-        <Navbar />
+          <Navbar/>
+        <form action="/auth/login" method="post">
         <div className="customForm">
             <div className="field">
-                <label className="label">Name</label>
+                <label className="label">Email</label>
                 <div className="control">
                 <input className="input" type="text" placeholder="e.g Alex Smith" name="username" value={this.state.username} onChange={this.handleChange}></input>
                 </div>
@@ -95,6 +96,7 @@ class Login extends React.Component {
             </div>
         </div>
       {this.renderRedirect()}
+      </form>
       </div>
     )
   }
