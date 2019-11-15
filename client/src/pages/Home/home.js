@@ -36,9 +36,9 @@ function Home() {
 						  </div>
 					  </div>
 					
-					  <div class="tech-slideshow">
-						<div class="mover-1"></div>
-						<div class="mover-2"></div>
+					  <div className="tech-slideshow">
+						<div className="mover-1"></div>
+						<div className="mover-2"></div>
 					</div>
 
 
@@ -52,7 +52,7 @@ function Home() {
 				<div className="hero-body" id="lessons-home">
 					<div className="container">
 						<section className="hero">
-							<p className="title" >
+							<p className="title" id="to-lessons">
 								Lessons
 							</p>
 
@@ -125,6 +125,10 @@ function Home() {
       <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
       is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
     </p>
+
+	<a href="#top"> Back to Top</a>
+
+
 				</div>
 			</footer>
 

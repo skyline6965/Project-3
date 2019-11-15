@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import 'bulma/css/bulma.css';
 
 
+
+
 function Navbar() {
 
 	return(
@@ -25,10 +27,13 @@ function Navbar() {
                 <div className="navbar-start">
                     <Link className="navbar-item" to="/home">
                         Home
-                    </Link>
-                    <Link className="navbar-item" to="/studio">
+                    </Link>                
+                    <a href="#studio-title" className="navbar-item">
                         Studio
-                    </Link>
+                    </a>
+                    <a href="#to-lessons" className="navbar-item">
+                        Lessons
+                    </a>                   
                     <Link className="navbar-item" to="/about">
                         About
                     </Link>
