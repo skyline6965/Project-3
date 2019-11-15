@@ -10,10 +10,13 @@ body {
 
 
   .hero-body {
-      background: black url(/images/SkylineStudio1.jpg) center / cover;
       opacity: .8;
       text-align: center;
       padding: 0 0;
+  }
+
+  .skyline-banner {
+    background: black url(/images/SkylineStudio1.jpg) center / cover;
   }
   
   #lessons-home {

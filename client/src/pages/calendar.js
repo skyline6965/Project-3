@@ -9,8 +9,9 @@ function CalendarPage() {
     <div>
     
       <Navbar />
-      <div className='form-color'>
-        <section className='hero is-dark'>
+      <div>
+      {/* use "className='form-color'" for gray background */}
+        <section className='hero'>
           <div className= 'hero-body'>
             <div className= 'container calendar'>
             
