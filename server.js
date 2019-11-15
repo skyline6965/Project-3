@@ -10,11 +10,6 @@ const cookieParser = require("cookie-parser");
 const passport = require("passport");
 require ("./config/passport");
 
-//sessions
-const session = require("express-session");
-const passport = require("passport");
-
-
 // Define middleware here
 app.use(express.urlencoded({ extended: true, useNewUrlParser: true }));
 app.use(express.json());
