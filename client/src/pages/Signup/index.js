@@ -137,7 +137,6 @@ class Signup extends React.Component {
               onChange={this.handleChange}>
             </input>
           </p>
-          <p className="help is-danger">This password is invalid</p>
         </div>
 
         <div className="field">
