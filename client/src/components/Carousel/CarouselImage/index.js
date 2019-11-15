@@ -3,7 +3,7 @@ import "./style.css";
 
 function CarouselImage(props){
   return (
-    <div>
+    <div className="image-slide">
       <img src={props.image} alt="Joe's Studio"/>
     </div>
   )
