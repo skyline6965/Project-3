@@ -1,18 +1,9 @@
-var router = require("express").Router();
-var passport = require("passport");
+const router = require("express").Router();
+const passport = require("../../config/passport");
 
-router.post('/login',
-  passport.authenticate('local', { successRedirect: '/auth/whatever',
-                                   failureRedirect: '/auth/login',
-                                   failureFlash: false })
-);
+// /auth/login
+router
+  .route("/login")
+  .post(passport.authenticate('local', {successRedirect: "/", failureRedirect: "/login", failureFlash: true}))
 
-router.get('/whatever', function(req, res){
-    console.log(req);
-    res.send("auth works!")
-})
-router.get('/login', function(req, res){
-    console.log(req);
-    res.send("auth works!")
-})
 module.exports = router;

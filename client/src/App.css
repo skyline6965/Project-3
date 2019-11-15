@@ -31,10 +31,15 @@
   background:hsl(0, 0%, 7%);
 }
 .hero-body {
-    background: black url(/images/SkylineStudio1.jpg) center / cover;
-    opacity: .8;
     text-align: center;
     padding: 0 0;
+    justify-content: center;
+}
+
+.skyline-banner{
+  background: black url(/images/SkylineStudio1.jpg) center / cover;
+  opacity: .8;
+  text-align: center;
 }
 
 #lessons-home {
@@ -98,4 +103,7 @@ button {
 
 p {
   padding: 10px 15px;
+} */
+  /* margin: auto;
+  padding-left: 200px;
 } */

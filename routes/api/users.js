@@ -20,9 +20,5 @@ router
   .put(userController.update)
   .delete(userController.remove);
 
-//Matches with "/api/users/login/:name"
-router
-  .route("/login/:name")
-  .get(userController.findByName)
 
 module.exports = router;

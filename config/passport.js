@@ -1,40 +1,44 @@
+const passport = require("passport");
+const db = require("../models");
+var LocalStrategy = require("passport-local").Strategy;
+var isAuthenticated = require("./middleware/isAuthenticated");
 
-var passport = require('passport')
-  , LocalStrategy = require('passport-local').Strategy;
 
-  passport.use(new LocalStrategy({
-    usernameField: 'email',
-    passwordField: 'passwd'
+function getUser(username){
+  let user = await db.User.find({ username: username });
+  return user
+}
+
+passport.use(new LocalStrategy(
+  {
+    usernameField: "username",
+    passwordField: "password"
   },
   function(username, password, done) {
-    // ...
-  }
-  ));
+    getUser(username)
+    console.log("\n===========");
+    console.log(user);
+    console.log("user: " + user[0]);
+    console.log("password: " + user[0].password);
+    console.log("plain password: " + password);
+    console.log(db.User.checkPassword);
+    console.log("\n===========")
+    if (!user) {
+      return done(null, false, { message: 'incorrect username' });
+    } else if (!user.checkPassword(password)) {
+      return done(null, false, { message: 'incorrect password' });
+    }
+    return done(null, user);
+    })
+    // .catch(err => {console.log(err)})
+  )
 
-passport.use(new LocalStrategy({
-  email: 'email',
-  password: 'password'
-},
-  function(email, password, done) {
-    User.findOne({ email: email }, function (err, user) {
-      if (err) { return done(err); }
-      if (!user) {
-        return done(null, false, { message: 'Incorrect email.' });
-      }
-      if (!user.validPassword(password)) {
-        return done(null, false, { message: 'Incorrect password.' });
-      }
-      return done(null, user);
-    });
-  }
-));
+passport.serializeUser(function(user, callback){
+  callback(null, user);
+})
 
-passport.serializeUser(function(user, done) {
-  done(null, user.id);
-});
+passport.deserializeUser(function(obj, callback){
+  callback(null, obj)
+})
 
-passport.deserializeUser(function(id, done) {
-  User.findById(id, function(err, user) {
-    done(err, user);
-  });
-});
+module.exports = passport;

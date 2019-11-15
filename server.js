@@ -10,23 +10,26 @@ const cookieParser = require("cookie-parser");
 const passport = require("passport");
 require ("./config/passport");
 
+//sessions
+const session = require("express-session");
+const passport = require("passport");
+
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true, useNewUrlParser: true }));
 app.use(express.json());
 
-app.use(cookieParser());
-app.use(bodyParser());
-app.use(passport.initialize());
-app.use(
-  session({
-  secret: 'fraggle-rock', //pick a random string to make the hash that is generated secure
-  })
-)
-app.use(passport.session());
+//session
+app.use(session({
+  secret:'scooby-doo',
+  resave: true, //required
+  saveUninitialized: true //required
+}))
 
-// app.use(express.static(path.join(__dirname, 'client/build')))
-// Serve up static assets (usually on heroku)
+//passport
+app.use(passport.initialize());
+app.use(passport.session())
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
 }

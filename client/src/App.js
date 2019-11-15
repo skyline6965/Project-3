@@ -4,6 +4,7 @@ import Calendar from "./pages/calendar";
 import About from "./pages/about";
 import Login from "./pages/Login";
 import Register from "./pages/Signup";
+import SubmitRequest from "./pages/submitrequest"
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import './App.css';
 
@@ -21,6 +22,9 @@ class App extends React.Component{
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/submitrequest">
+            <SubmitRequest />
           </Route>
           <Route path="/register">
             <Register />

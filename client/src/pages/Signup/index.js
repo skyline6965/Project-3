@@ -8,7 +8,7 @@ import Navbar from "../../components/Nav";
 class Signup extends React.Component {
 
   state = {
-    name: "",
+    username: "",
     email: "",
     phone: "",
     password: "",
@@ -31,7 +31,7 @@ class Signup extends React.Component {
   handleChange = (event) => {
     event.preventDefault()
     console.log("Username/Info:")
-    console.log(this.state.name)
+    console.log(this.state.username)
 
     const { name, value } = event.target;
     this.setState({
@@ -50,12 +50,12 @@ class Signup extends React.Component {
     });
 
     var newUser = {
-      name: this.state.name,
+      username: this.state.username,
       email: this.state.email,
       password: this.state.password
     }
 
-    console.log(this.state.name);
+    console.log(newUser);
 
     axios.post('/api/users', newUser)
     .then(response => {
@@ -69,7 +69,6 @@ class Signup extends React.Component {
       else{
         console.log("Signup error");
       }
-
     }).catch(error => {
       console.log("Signup Server Error: ")
       console.log(error);
@@ -87,10 +86,10 @@ class Signup extends React.Component {
           <div className="control">
             <input
               className="input"
-              name="name"
+              name="username"
               type="text"
               placeholder="Name"
-              value={this.state.name}
+              value={this.state.username}
               onChange={this.handleChange}>
             </input>
           </div>
