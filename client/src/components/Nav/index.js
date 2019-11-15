@@ -29,8 +29,8 @@ function Navbar() {
                     <Link className="navbar-item" to="/studio">
                         Studio
                     </Link>
-                    <Link className="navbar-item" to="/lessons">
-                        Lessons
+                    <Link className="navbar-item" to="/about">
+                        About
                     </Link>
 
                 <div className="navbar-item has-dropdown is-hoverable">
@@ -39,19 +39,19 @@ function Navbar() {
                     </Link>
 
                         <div className="navbar-dropdown">
-                            <Link className="navbar-item" to="/about">
-                                About
+                        <Link className="navbar-item" to="/submitrequest">
+                                    Schedule Appointments
+											</Link>
+                            <hr className="navbar-divider"></hr>
+                            <Link className="navbar-item" to="/calendar">
+                                See Availability
+          									</Link>
+                            <Link className="navbar-item" to="/lessons">
+                                Lessons
           									</Link>
                             <Link className="navbar-item" to="/jobs">
                                 Jobs
           									</Link>
-                            <Link className="navbar-item" to="/calendar">
-                                Contact
-          									</Link>
-                            <hr className="navbar-divider"></hr>
-                                <a className="navbar-item" href="/">
-                                    Report an issue
-																	</a>
         									</div>
                         </div>
                     </div>
