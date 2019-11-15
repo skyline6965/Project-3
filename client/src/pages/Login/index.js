@@ -69,6 +69,7 @@ class Login extends React.Component {
   render(){
     return (
         <div>
+          <Navbar/>
         <form action="/auth/login" method="post">
         <div className="customForm">
             <div className="field">

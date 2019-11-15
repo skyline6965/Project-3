@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from "./pages/home.js";
+import Home from "./pages/Home/home.js";
 import Calendar from "./pages/calendar";
 import About from "./pages/about";
 import Login from "./pages/Login";

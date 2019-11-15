@@ -23,7 +23,7 @@
 
 
 /* Joe CSS */
-body {
+/* body {
   background: black;
 }
 
@@ -34,8 +34,19 @@ body {
     background: black url(/images/SkylineStudio1.jpg) center / cover;
     opacity: .8;
     text-align: center;
+    padding: 0 0;
 }
 
+#lessons-home {
+  background: black  center / cover;
+  width: 100%;
+  margin: 0px 0px 50px 0px;
+  padding: none;
+
+} */
+
+
+/* 
 .title {
   font-size: 6rem;
   color: gray;
@@ -45,3 +56,46 @@ body {
   justify-content: center;
   font-size: 16px;
 }
+
+.card {
+  margin: 15px 15px;
+
+}
+
+
+
+
+#recording-card {
+  background: black url(/images/akgmic2.jpg) center / cover;
+  height: 500px;
+  opacity: .8;
+  text-align: right;
+ 
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(39, 39, 39);
+  box-shadow: 1px 1px 2px rgb(46, 46, 46);
+}
+
+#piano-card {
+  background: black url(/images/unsplashpiano.jpg) center / cover;
+  height: 500px;
+  opacity: .8;
+  text-align: center;
+  margin: 15px 30px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(39, 39, 39);
+  box-shadow: 1px 1px 2px rgb(46, 46, 46);
+ 
+}
+
+button {
+  margin: 15px 15px;
+}
+
+p {
+  padding: 10px 15px;
+} */

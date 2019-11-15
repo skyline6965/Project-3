@@ -1,0 +1,138 @@
+/* Joe CSS */
+body {
+    background: black;
+  }
+  
+  .navbar {
+    background:hsl(0, 0%, 7%);
+  }
+
+
+
+  .hero-body {
+      background: black url(/images/SkylineStudio1.jpg) center / cover;
+      opacity: .8;
+      text-align: center;
+      padding: 0 0;
+  }
+  
+  #lessons-home {
+    background: black center / cover;
+    width: 100%;
+    /* margin: 0px 0px 50px 0px; */
+    padding: none;
+  
+  }
+  
+  /* #lessons-home.hero-body {
+    m
+  } */
+  
+  .title {
+    font-size: 6rem;
+    color: gray;
+  }
+  
+  .calendar {
+    justify-content: center;
+    font-size: 16px;
+  }
+  
+  .card {
+    margin: 15px 15px;
+  
+  }
+  
+  
+  
+  #recording-card {
+    background: black url(/images/akgmic2.jpg) center / cover;
+    height: 500px;
+    opacity: .8;
+    text-align: right;
+    /* margin: 15px 15px; */
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(39, 39, 39);
+    box-shadow: 1px 1px 2px rgb(46, 46, 46);
+  }
+  
+  #piano-card {
+    background: black url(/images/unsplashpiano.jpg) center / cover;
+    height: 450px;
+    width: 40%;
+    opacity: .8;
+    text-align: center;
+    margin: 15px 15px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(39, 39, 39);
+    box-shadow: 1px 1px 2px rgb(46, 46, 46);
+   
+  }
+  
+  button {
+    margin: 15px 15px;
+  }
+  
+  p {
+    padding: 10px 15px;
+  }
+
+  .columns {
+      margin: 15px 15px;
+  }
+
+  .footer {
+      background: black;
+  }
+
+  #studio-section {
+      background: rgb(230, 230, 230);
+  }
+
+  #studio-title {
+      color: black;
+  }
+
+  /* Joe Horizontal Slideshow */
+
+  .tech-slideshow {
+    height: 200px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .tech-slideshow > div {
+    height: 200px;
+    width: 2526px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+  }
+  .tech-slideshow .mover-1 {
+    animation: moveSlideshow 12s linear infinite;
+  }
+  .tech-slideshow .mover-2 {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    background-position: 0 -200px;
+    animation: moveSlideshow 15s linear infinite;
+  }
+  .tech-slideshow:hover .mover-2 {
+    opacity: 1;
+  }
+  
+  @keyframes moveSlideshow {
+    100% { 
+      transform: translateX(-66.6666%);  
+    }
+  }
