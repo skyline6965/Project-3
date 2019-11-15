@@ -12,7 +12,7 @@ class Login extends React.Component {
     username: "",
     password: "",
     redirect: false,
-    redirectTo: "/"
+    redirectTo: "/calendar"
   }
 
   setRedirect = () => {
@@ -49,8 +49,12 @@ class Login extends React.Component {
     
   axios.post("/auth/login", loginInfo)
     .then(response => {
+      alert("Welcome");
       console.log("you passed")
       console.log(response)
+      this.setRedirect();
+      this.renderRedirect();
+      
     })
     // .catch(err => {
     //   console.log("FUCKMEEEE");
