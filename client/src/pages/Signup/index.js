@@ -69,7 +69,6 @@ class Signup extends React.Component {
       else{
         console.log("Signup error");
       }
-
     }).catch(error => {
       console.log("Signup Server Error: ")
       console.log(error);
