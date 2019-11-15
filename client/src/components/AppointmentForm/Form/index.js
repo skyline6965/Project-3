@@ -49,7 +49,7 @@ class AptForm extends React.Component {
       <form id="contact-form">
         <div className="form-line">
           <label for="title">About:
-          <input className='input' type="text" id="title" name="title" value={this.state.title} onChange={this.handleInputChange}>
+          <input className='input' type="text" id="title" placeholder='lesson, studio time, etc.' name="title" value={this.state.title} onChange={this.handleInputChange}>
 
           </input>
 
