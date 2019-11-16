@@ -12,7 +12,7 @@ class Login extends React.Component {
     username: "",
     password: "",
     redirect: false,
-    redirectTo: "/auth/online"
+    redirectTo: "/calendar"
   }
 
   setRedirect = () => {
@@ -36,6 +36,7 @@ class Login extends React.Component {
 
   sendHome = event => {
     this.setRedirect();
+    this.setState({redirectTo: "/"})
     this.renderRedirect();
   }
 
