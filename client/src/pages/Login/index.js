@@ -12,7 +12,7 @@ class Login extends React.Component {
     username: "",
     password: "",
     redirect: false,
-    redirectTo: "/auth/online"
+    redirectTo: "/calendar"
   }
 
   setRedirect = () => {
