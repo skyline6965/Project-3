@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Nav";
+import {Link} from "react-router-dom";
 import "./style.css"
 
 
@@ -71,7 +72,7 @@ function Home() {
 					</div>
 					<div>
 						<a href="">Learn More</a>
-					  <button className="button is-link" id="studio-button">Schedule Studio Time</button>
+							<Link to="/calendar"><button className="button is-link" id="studio-button">Schedule Studio Time</button></Link>
 					  </div>
 					</div>
 				</div>
@@ -144,7 +145,7 @@ function Home() {
 
 			</div>
 
-			<button className="button is-link">Schedule Lesson Time</button>
+			<Link to="/calendar"><button className="button is-link" id="studio-button">Schedule Lesson Time</button></Link>
 
 			<br></br>
 
