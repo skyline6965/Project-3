@@ -4,11 +4,11 @@ import Navbar from "../components/Nav"
 import CalendarContainer from "../components/Calendar/Body"
 import '../App.css';
 import AptForm from "../components/AppointmentForm/AptContainer"
+import FormContainer from "../components/AppointmentForm/Form"
 
 function CalendarPage() {
-  return(
+  return (
     <div>
-    
       <Navbar />
       <div>
       {/* use "className='form-color'" for gray background */}

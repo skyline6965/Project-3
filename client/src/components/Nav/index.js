@@ -58,6 +58,10 @@ function Navbar() {
 
                             </div>
                         </div>
+
+                        <Link className="navbar-item" to="/contact">
+                            Contact
+                        </Link>
                     </div>
 
                     <div className="navbar-end">
