@@ -20,12 +20,12 @@ class Carousel extends React.Component {
 
   render(){
     var settings = {
-      autoplay: true,
-      autoplaySpeed: 7000,
+      autoplay: true,        
+      autoplaySpeed: 3000,
       arrows: true,
       infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToShow: 3,
+      // slidesToScroll: 
     };
     return (
       <Slider {...settings}>

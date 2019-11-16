@@ -1,8 +1,11 @@
 .form-container {
-  margin:0 auto;
-  text-align: center;
+  margin: auto;
+  align-content: center;
   color: white;
+  width: 70%;
+  text-align: left;
 }
+
 
 h2 {
   font-size: 2em;

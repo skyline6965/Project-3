@@ -7,16 +7,16 @@ import "./style.css";
 moment.locale("en-GB");
 
 const localizer = momentLocalizer(moment);
-class CalendarContainer extends React.Component{
+class CalendarContainer extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       cal_events: [],
     }
-}
+  }
 
-  componentDidMount(){
-  
+  componentDidMount() {
+
     let self = this
     axios.get("/api/appointments")
     .then(response => {
