@@ -60,8 +60,9 @@ function Home() {
 						  <br></br>
 						 Take your music to the next level</p>
 						 <p>Text Here</p>
-						 <p>Text Here</p><p>Text Here</p>
-						  </div>
+						 <p>Text Here</p>
+						 <p>Text Here</p>
+						</div>
 
 				
 					  </div>
