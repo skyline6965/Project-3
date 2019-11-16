@@ -41,13 +41,16 @@ class CalendarContainer extends React.Component{
   
   render(){
     return(
-      <Calendar
-        localizer={localizer}
-        events={this.state.cal_events}
-        startAccessor="start"
-        endAccessor="end"
-        style={{height: 750, width:950}} //style placeholder so calendar will render. Will move to css file. 
-      />
+      <div className="calendar-container">
+        <Calendar
+          localizer={localizer}
+          events={this.state.cal_events}
+          startAccessor="start"
+          endAccessor="end"
+          style={{height: 750, width:950}}
+
+        />
+      </div>
     )
   }
 };

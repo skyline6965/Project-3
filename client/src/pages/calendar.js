@@ -2,6 +2,7 @@ import React from "react";
 import 'bulma/css/bulma.css'
 import Navbar from "../components/Nav"
 import CalendarContainer from "../components/Calendar/Body"
+import AptContainer from "../components/AppointmentForm/AptContainer/index"
 import '../App.css';
 
 function CalendarPage() {
@@ -13,11 +14,15 @@ function CalendarPage() {
       {/* use "className='form-color'" for gray background */}
         <section className='hero'>
           <div className= 'hero-body'>
-            <div className= 'container calendar'>
-            
+
+            <div className= 'cal-container'>
               <CalendarContainer />
-           
             </div>
+
+            <div className= 'apt-container'>
+              <AptContainer />
+            </div>
+
           </div>
         </section>
       </div>

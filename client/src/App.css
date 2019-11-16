@@ -21,6 +21,19 @@
   color: hsl(209, 99%, 48%);
 }
 
+.cal-container{
+  box-sizing: border-box;
+  width:60%;
+  margin:0 auto;
+}
+.apt-container{
+  box-sizing: border-box;
+  width:40%;
+  margin: 0 auto;
+}
+
+
+
 
 /* Joe CSS */
 /* body {
