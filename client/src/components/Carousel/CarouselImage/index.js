@@ -9,5 +9,4 @@ function CarouselImage(props){
   )
 }
 
-
 export default CarouselImage;

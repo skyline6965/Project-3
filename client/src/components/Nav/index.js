@@ -36,24 +36,25 @@ function Navbar() {
                         <div className="navbar-item has-dropdown is-hoverable">
                             <Link className="navbar-link" to="/calendar">
                                 Bookings
-                    </Link>
+                            </Link>
 
                             <div className="navbar-dropdown">
                                 <Link className="navbar-item" to="/submitrequest">
                                     Schedule Appointments
-											</Link>
+								</Link>
                                 <hr className="navbar-divider"></hr>
                                 <Link className="navbar-item" to="/calendar">
                                     See Availability
-          									</Link>
+          						</Link>
                                 <Link className="navbar-item" to="/lessons">
                                     Lessons
-          									</Link>
-                                <Link className="navbar-item" to="/jobs">
-                                    Jobs
-          									</Link>
+          						</Link>
                             </div>
                         </div>
+
+                        <Link className="navbar-item" to="/contact">
+                            Contact
+                        </Link>
                     </div>
 
                     <div className="navbar-end">
@@ -64,7 +65,7 @@ function Navbar() {
                                 </Link>
                                 <Link className="button is-light" to="/login">
                                     Log in
-         												</Link>
+         						</Link>
                             </div>
                         </div>
                     </div>
