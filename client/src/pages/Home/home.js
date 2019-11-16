@@ -12,7 +12,7 @@ function Home() {
 					<div className="container">
 						{/* <img src="https://images.squarespace-cdn.com/content/v1/50187db624acce5741aad553/1504285359881-EALV96CVEPU3HQ6LB2QD/ke17ZwdGBToddI8pDm48kKKBYw7RkZ4eykKqfKUvHod7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Ud9Ke1lvTF9Z4NYnQC_mTW5zDYQ53IbTNfUUbEMZUmRiJvwGh1qtNWvMhYKnvaKhbA/DSC01039.png"></img> */}
 						<p className="title" >
-							Skyline Studios
+							
       				</p>
 					</div>
 				</div>
@@ -24,25 +24,55 @@ function Home() {
 					<div className="container">
 						{/* <img src="https://images.squarespace-cdn.com/content/v1/50187db624acce5741aad553/1504285359881-EALV96CVEPU3HQ6LB2QD/ke17ZwdGBToddI8pDm48kKKBYw7RkZ4eykKqfKUvHod7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Ud9Ke1lvTF9Z4NYnQC_mTW5zDYQ53IbTNfUUbEMZUmRiJvwGh1qtNWvMhYKnvaKhbA/DSC01039.png"></img> */}
 						<p className="title" id="studio-title">
-							Studio Section
+							Skyline Studios
       				</p>
+					 <p id="studio-subtitle"> small studio  <strong>BIG SOUND</strong></p>
 					  <div className="columns">
+						  <div className="column is-7" id="studio-pic1">
+							
+						  </div>
+						
+						  <div className="column is-5" id="studio-text">
+				
+						  </div>
+					  </div>
+
+					  <div className="columns">						  					
+						  <div className="column is-6">
+						  <p id="studio-text2"> <strong>Pro equipment. Experienced engineers.</strong>
+						  <br></br>
+						 Take your music to the next level</p>
+						 <p></p>
+						 <p>Text Here</p><p>Text Here</p>
+						  </div>
+
 						  <div className="column is-6">
 						  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/159244675&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 						  </div>
-						
-						  <div className="column is-6">
-						  <a data-flickr-embed="true" data-context="true" href="https://www.flickr.com/photos/182459762@N05/49068214672/in/album-72157711787878022/" title="Skyline Studios"><img src="https://live.staticflickr.com/65535/49068214672_2ab8544730_b.jpg" width="1024" height="683" alt="Skyline Studios"></img></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-						  </div>
 					  </div>
 					
-					  <div class="tech-slideshow">
-						<div class="mover-1"></div>
-						<div class="mover-2"></div>
+					  <div className="columns">			
+					  	<div className="column is-6" id="studio-pic1">
+						
+						  </div>			  					
+						  <div className="column is-6">
+						  <p id="studio-text2"> <strong>Pro equipment. Experienced engineers.</strong>
+						  <br></br>
+						 Take your music to the next level</p>
+						 <p>Text Here</p>
+						 <p>Text Here</p><p>Text Here</p>
+						  </div>
+
+				
+					  </div>
+					  <div className="tech-slideshow">
+						<div className="mover-1"></div>
+						<div className="mover-2"></div>
 					</div>
-
-
-					  <button className="button is-link">Schedule Studio Time</button>
+					<div>
+						<a href="">Learn More</a>
+					  <button className="button is-link" id="studio-button">Schedule Studio Time</button>
+					  </div>
 					</div>
 				</div>
 			</section>
@@ -52,7 +82,7 @@ function Home() {
 				<div className="hero-body" id="lessons-home">
 					<div className="container">
 						<section className="hero">
-							<p className="title" >
+							<p className="title" id="to-lessons">
 								Lessons
 							</p>
 
@@ -125,6 +155,10 @@ function Home() {
       <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
       is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
     </p>
+
+	<a href="#top"> Back to Top</a>
+
+
 				</div>
 			</footer>
 

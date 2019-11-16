@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import 'bulma/css/bulma.css';
 
 
+
+
 function Navbar() {
 
     return (
@@ -26,29 +28,34 @@ function Navbar() {
                         <Link className="navbar-item" to="/home">
                             Home
                     </Link>
-                        <Link className="navbar-item" to="/studio">
+                        <a href="#studio-title" className="navbar-item">
                             Studio
-                    </Link>
+                    </a>
+                        <a href="#to-lessons" className="navbar-item">
+                            Lessons
+                    </a>
                         <Link className="navbar-item" to="/about">
                             About
                     </Link>
 
                         <div className="navbar-item has-dropdown is-hoverable">
-                            <Link className="navbar-link" to="/calendar">
-                                Bookings
-                            </Link>
+                            <Link className="navbar-link">
+                                Contact
+                    </Link>
 
                             <div className="navbar-dropdown">
                                 <Link className="navbar-item" to="/submitrequest">
-                                    Schedule Appointments
+                                    Schedule Studio Time
 								</Link>
                                 <hr className="navbar-divider"></hr>
-                                <Link className="navbar-item" to="/calendar">
-                                    See Availability
-          						</Link>
-                                <Link className="navbar-item" to="/lessons">
-                                    Lessons
-          						</Link>
+                                <Link className="navbar-item" to="/submitrequest">
+                                    Schedule Lesson
+                                </Link>
+                                <hr className="navbar-divider"></hr>
+                                <Link className="navbar-item" to="/submitrequest">
+                                   Contact Info
+                                </Link>
+
                             </div>
                         </div>
 
