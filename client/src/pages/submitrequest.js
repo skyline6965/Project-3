@@ -6,20 +6,15 @@ import AptContainer from "../components/AppointmentForm/AptContainer";
 import '../App.css';
 
 function SubmitRequest() {
-  return(
+  return (
     <div>
-    <Navbar />
-    <div className="columns is-multiline is-mobile">
-    <div className="column is-one-half">
-    <AptContainer />
-    </div>
-      <div className="column is-one-half">
-       <FormContainer />
+      <Navbar />
+      <div className="columns is-multiline is-mobile">
+        <div className="column is-one-half">
+          <AptContainer />
+        </div>
       </div>
     </div>
-    </div>
- 
-  
   )
 };
 
