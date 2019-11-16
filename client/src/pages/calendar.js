@@ -3,6 +3,7 @@ import 'bulma/css/bulma.css'
 import Navbar from "../components/Nav"
 import CalendarContainer from "../components/Calendar/Body"
 import '../App.css';
+import AptForm from "../components/AppointmentForm/AptContainer"
 
 function CalendarPage() {
   return(
@@ -16,8 +17,9 @@ function CalendarPage() {
             <div className= 'container calendar'>
             
               <CalendarContainer />
-           
+
             </div>
+            <div className="apt-form"> <AptForm /></div>
           </div>
         </section>
       </div>
