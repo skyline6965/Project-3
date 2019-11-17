@@ -2,8 +2,6 @@ import React from "react";
 import Navbar from "../../components/Nav";
 import {Link} from "react-router-dom";
 import "./style.css"
-import { Link } from "react-router-dom";
-
 
 function Home() {
 	return (

@@ -30,8 +30,6 @@ class Signup extends React.Component {
 
   handleChange = (event) => {
     event.preventDefault()
-    console.log("Username/Info:")
-    console.log(this.state.username)
 
     const { name, value } = event.target;
     this.setState({
@@ -82,7 +80,7 @@ class Signup extends React.Component {
       <Navbar />
       <div className="customForm">
         <div className="field">
-          <label className="label">Name</label>
+          <label className="label">Username</label>
           <div className="control">
             <input
               className="input"
