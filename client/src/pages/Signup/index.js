@@ -149,7 +149,7 @@ class Signup extends React.Component {
           <br></br>
           <div>
             <br></br>
-          Already have a user profile? Click <a href="/login">here</a>
+          Already have a user profile? Click<a href="/login"> here</a>
           </div>
         </div>
       </div>
