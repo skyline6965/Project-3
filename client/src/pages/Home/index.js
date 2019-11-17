@@ -72,9 +72,15 @@ function Home() {
 						<div className="mover-1"></div>
 						<div className="mover-2"></div>
 					</div>
-					<div>
+
+					<Link className="button is-link" to="/submitrequest" id="studio-time">
+								<strong>Schedule Studio Time</strong>
+              		</Link>
+			
+
+					{/* <div>
 					  <button className="button is-link" id="studio-button">Schedule Studio Time</button>
-					  </div>
+					  </div> */}
 					</div>
 				</div>
 			</section>

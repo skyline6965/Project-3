@@ -159,7 +159,9 @@ body {
   #studio-button{
       margin: -45px 10px 30px 10px;
   }
-
+#studio-time {
+  margin: 0 0 40px 0;
+}
   .recording-subtitle {
     font-size: 50px;
     color: white;
