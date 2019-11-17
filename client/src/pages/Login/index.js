@@ -36,6 +36,7 @@ class Login extends React.Component {
 
   sendHome = event => {
     this.setRedirect();
+    this.setState({redirectTo: "/"})
     this.renderRedirect();
   }
 
