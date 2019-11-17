@@ -104,7 +104,6 @@ class Signup extends React.Component {
               value={this.state.email}
               onChange={this.handleChange}>
             </input>
-            <p className="help is-success">This email is available</p>
           </div>
 
         </div>
@@ -113,7 +112,7 @@ class Signup extends React.Component {
           <label className="label">Phone</label>
           <div className="control">
             <input
-              className="input is-danger"
+              className="input"
               name="phone"
               type="tel"
               placeholder="(XXX) XXX-XXXX"
