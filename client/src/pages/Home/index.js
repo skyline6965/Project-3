@@ -3,7 +3,6 @@ import Navbar from "../../components/Nav";
 import {Link} from "react-router-dom";
 import "./style.css"
 
-
 function Home() {
 	return (
 		<div>
@@ -44,7 +43,7 @@ function Home() {
 						  <br></br>
 						 Take your music to the next level</p>
 						 <p></p>
-						 <p>Text Here</p><p>Text Here</p>
+						 <p>Text Here</p><p>Text here</p>
 						  </div>
 
 						  <div className="column is-6">
@@ -146,7 +145,9 @@ function Home() {
 
 			</div>
 
-			<Link to="/calendar"><button className="button is-link" id="studio-button">Schedule Lesson Time</button></Link>
+							<Link className="button is-link" to="/submitrequest">
+								<strong>Schedule A Lesson</strong>
+              </Link>
 
 			<br></br>
 

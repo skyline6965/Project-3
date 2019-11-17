@@ -30,8 +30,6 @@ class Signup extends React.Component {
 
   handleChange = (event) => {
     event.preventDefault()
-    console.log("Username/Info:")
-    console.log(this.state.username)
 
     const { name, value } = event.target;
     this.setState({
@@ -82,17 +80,17 @@ class Signup extends React.Component {
       <Navbar />
       <div className="customForm">
         <div className="field">
-          <label className="label">Name</label>
-            <div className="control">
-              <input
-                className="input"
-                name="username"
-                type="text"
-                placeholder="Name"
-                value={this.state.username}
-                onChange={this.handleChange}>
-              </input>
-            </div>
+          <label className="label">Username</label>
+          <div className="control">
+            <input
+              className="input"
+              name="username"
+              type="text"
+              placeholder="Name"
+              value={this.state.username}
+              onChange={this.handleChange}>
+            </input>
+          </div>
         </div>
 
         <div className="field">
@@ -106,7 +104,6 @@ class Signup extends React.Component {
               value={this.state.email}
               onChange={this.handleChange}>
             </input>
-            <p className="help is-success">This email is available</p>
           </div>
 
         </div>
@@ -115,7 +112,7 @@ class Signup extends React.Component {
           <label className="label">Phone</label>
           <div className="control">
             <input
-              className="input is-danger"
+              className="input"
               name="phone"
               type="tel"
               placeholder="(XXX) XXX-XXXX"
@@ -138,27 +135,6 @@ class Signup extends React.Component {
             </input>
           </p>
         </div>
-
-        <div className="field">
-          <label className="label">Subject</label>
-          <div className="control">
-            <div className="select">
-              <select>
-                <option>Reserve Studio Time</option>
-                <option>Recording Lessons</option>
-                <option>Piano Lessons</option>
-              </select>
-            </div>
-          </div>
-        </div>
-
-        <div className="field">
-          <label className="label">Message</label>
-          <div className="control">
-            <textarea className="textarea" placeholder="Text Area"></textarea>
-          </div>
-        </div>
-
 
         <div className="field is-grouped">
           <div className="control">

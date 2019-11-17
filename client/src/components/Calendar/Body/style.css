@@ -10,10 +10,7 @@
   color: black;
 }
 
-.rbc-calendar {
-  width: 60%;
-}
-
-.apt-form {
-  width: 40%;
+.calendar-container {
+  height:750;
+  width: 900;
 }
