@@ -94,6 +94,7 @@ class Login extends React.Component {
                   Cancel
                 </button>
               </p>
+            
             </div>
         </div>
       {this.renderRedirect()}

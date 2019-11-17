@@ -146,6 +146,11 @@ class Signup extends React.Component {
           <div className="control">
             <button className="button is-link is-light">Cancel</button>
           </div>
+          <br></br>
+          <div>
+            <br></br>
+          Already have a user profile? Click <a href="/login">here</a>
+          </div>
         </div>
       </div>
       {this.renderRedirect()}

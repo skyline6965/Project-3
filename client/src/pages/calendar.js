@@ -19,10 +19,10 @@ function CalendarPage() {
             
               <CalendarContainer />
             </div>
-
-            <div className= 'apt-container'>
+{/* AptForm should have the style changes to make form a little better for devices. - Joe */}
+            {/* <div className= 'apt-container'>
               <AptContainer />
-            </div>
+            </div> */}
             <div id="apt-div"> 
             <AptForm />
             </div>
