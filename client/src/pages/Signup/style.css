@@ -1,12 +1,25 @@
 .customForm {
-    padding: 20px 400px;
+    width: 100%;
+    align-content: center;
+    margin: auto;
     
+
 }
 
-input {
-    text-align: left;
+.label {
+    width: 100%;
+    margin: auto;
+    color: lightgray;
 }
 
-.textarea {
-    text-align: left;
+.field {
+    width: 100%;
+    margin: auto;
+}
+
+.control {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+
 }

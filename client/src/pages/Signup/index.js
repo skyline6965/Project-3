@@ -83,16 +83,16 @@ class Signup extends React.Component {
       <div className="customForm">
         <div className="field">
           <label className="label">Name</label>
-          <div className="control">
-            <input
-              className="input"
-              name="username"
-              type="text"
-              placeholder="Name"
-              value={this.state.username}
-              onChange={this.handleChange}>
-            </input>
-          </div>
+            <div className="control">
+              <input
+                className="input"
+                name="username"
+                type="text"
+                placeholder="Name"
+                value={this.state.username}
+                onChange={this.handleChange}>
+              </input>
+            </div>
         </div>
 
         <div className="field">
