@@ -2,6 +2,7 @@ import React from "react";
 import 'bulma/css/bulma.css'
 import Navbar from "../components/Nav"
 import CalendarContainer from "../components/Calendar/Body"
+import AptContainer from "../components/AppointmentForm/AptContainer/index"
 import '../App.css';
 import AptForm from "../components/AppointmentForm/AptContainer"
 import FormContainer from "../components/AppointmentForm/Form"
@@ -17,7 +18,10 @@ function CalendarPage() {
             <div className= 'container calendar' id="cal-div">
             
               <CalendarContainer />
+            </div>
 
+            <div className= 'apt-container'>
+              <AptContainer />
             </div>
             <div id="apt-div"> 
             <AptForm />

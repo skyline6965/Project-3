@@ -36,6 +36,7 @@ class Login extends React.Component {
 
   sendHome = event => {
     this.setRedirect();
+    this.setState({redirectTo: "/"})
     this.renderRedirect();
   }
 
@@ -69,7 +70,7 @@ class Login extends React.Component {
         <form action="/auth/login" method="post">
         <div className="customForm">
             <div className="field">
-                <label className="label">Email</label>
+                <label className="label">Username</label>
                 <div className="control">
                 <input className="input" type="text" placeholder="e.g Alex Smith" name="username" value={this.state.username} onChange={this.handleChange}></input>
                 </div>

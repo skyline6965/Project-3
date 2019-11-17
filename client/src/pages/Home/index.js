@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Nav";
+import {Link} from "react-router-dom";
 import "./style.css"
-
 
 function Home() {
 	return (
@@ -133,7 +133,9 @@ function Home() {
 
 			</div>
 
-			<button className="button is-link">Schedule Lesson Time</button>
+							<Link className="button is-link" to="/submitrequest">
+								<strong>Schedule A Lesson</strong>
+              </Link>
 
 			<br></br>
 

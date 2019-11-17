@@ -11,7 +11,8 @@ function getUser(username){
 passport.use(new LocalStrategy(
   {
     usernameField: "username",
-    passwordField: "password"
+    passwordField: "password",
+    // passReqToCallback: true
   },
   function(username, password, done) {
     getUser(username).then(users => {
