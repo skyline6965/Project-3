@@ -52,9 +52,9 @@ function Home() {
 					  </div>
 					
 					  <div className="columns">			
-					  	<div className="column is-6" id="studio-pic1">
+					  	{/* <div className="column is-6" id="studio-pic1">
 						
-						  </div>			  					
+						  </div>			  					 */}
 						  <div className="column is-6">
 						  <p id="studio-text2"> <strong>Pro equipment. Experienced engineers.</strong>
 						  <br></br>
