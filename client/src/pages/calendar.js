@@ -14,12 +14,14 @@ function CalendarPage() {
       {/* use "className='form-color'" for gray background */}
         <section className='hero'>
           <div className= 'hero-body'>
-            <div className= 'container calendar'>
+            <div className= 'container calendar' id="cal-div">
             
               <CalendarContainer />
 
             </div>
-            <div className="apt-form"> <AptForm /></div>
+            <div id="apt-div"> 
+            <AptForm />
+            </div>
           </div>
         </section>
       </div>

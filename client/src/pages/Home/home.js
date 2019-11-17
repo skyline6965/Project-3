@@ -39,28 +39,31 @@ function Home() {
 
 					  <div className="columns">						  					
 						  <div className="column is-6">
-						  <p id="studio-text2"> <strong>Pro equipment. Experienced engineers.</strong>
-						  <br></br>
-						 Take your music to the next level</p>
-						 <p></p>
-						 <p>Text Here</p><p>Text Here</p>
+						  <p id="studio-text2"> <strong>Pro equipment. 
+							  <br></br>Experienced engineers.</strong></p>
+						  <p id="studio-p1">
+						  With a comfortable atmosphere and top-quality gear, we encourage creativity and expression while working collaboratively with you to achieve your best performance.
+						  </p>
+		
 						  </div>
 
 						  <div className="column is-6">
-						  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/159244675&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+						  <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/159244675&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 						  </div>
 					  </div>
 					
 					  <div className="columns">			
-					  	<div className="column is-6" id="studio-pic1">
-						
+					  	<div className="column is-6" id="studio-pic2">
+						{/* <img src="/images/Piano_2.jpg"></img> */}
 						  </div>			  					
 						  <div className="column is-6">
-						  <p id="studio-text2"> <strong>Pro equipment. Experienced engineers.</strong>
-						  <br></br>
-						 Take your music to the next level</p>
-						 <p>Text Here</p>
-						 <p>Text Here</p><p>Text Here</p>
+						  <p id="studio-text3"> <strong>Create Awesome.</strong></p>				  
+					
+						 <p id="studio-p2">Skyline Studios hosts a main control room for mixing and mastering in addition to an adjacent room for recording solo artists or small ensembles. </p>
+						
+						 <br></br>
+						 <p id="studio-p3">Check out more studio photos <a href="/about">here</a> or contact us to take a free tour and see how we can help you with your next project</p>
+						
 						  </div>
 
 				
@@ -70,7 +73,6 @@ function Home() {
 						<div className="mover-2"></div>
 					</div>
 					<div>
-						<a href="">Learn More</a>
 					  <button className="button is-link" id="studio-button">Schedule Studio Time</button>
 					  </div>
 					</div>
@@ -99,19 +101,10 @@ function Home() {
 					{/* <img src="images/akgmic2.jpg" className="is-3by2" alt="something" id="recording-img"></img> */}
 				</div>
 				<div className="column is-5">
-					<p>
-					Selling Points for mixing:
-					Professional equipment
-					Berklee College of Music
-					1-on-1 Lessons (Lessons tailored to your needs)
-					Affordable
-					Try a free 30min intro lesson!
-					Music to play here?
-					
-
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<p className="recording-subtitle">Recording. Mixing. Mastering.</p>
+					<p className="recording-p1">
+					<strong>Learn how to do it all yourself from the ground up</strong>	
+					<p>Tailored classes for you based on your individual goals and interests. Start from scratch or pick a topic and we'll guide you through learning professional techniques, softwares, and other tools to get your music ready to share on your favorite platforms like iTunes, YouTube, and Spotify. </p>
 						</p>
 				</div>
 			</div>
@@ -119,20 +112,16 @@ function Home() {
 			<div className="columns">
 
 				<div className="column is-7">
-					<p>
-					<p>Selling Points:</p>
-					<p>Beginner Piano...</p>
-					Professional equipment
-					Berklee College of Music
-					1-on-1 Lessons (Lessons tailored to your needs)
-					Affordable
-					Try a free 30min intro lesson!
-					Music to play here?
+					<p className="recording-subtitle">Private Lessons</p>
+				
+					<p className="recording-p1"><strong>Beginner and Intermediate Piano Lessons</strong></p>
+					<p className="recording-p1">All ages welcome. One-on-One instruction from a Berklee College of Music grad. After first lesson, books and materials are chosen for each student according to their skill level and interests.</p>
+					<br></br><p className="recording-p1">We prepare you to learn fundamentals while also trying to help you learn your favorite songs.
+					In addition to 30min lessons, we provide instruction and assignments for the following week.
+					</p><p className="recording-p1">Schedule your first 30min lesson for free!
+					</p>
 
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
+						
 				</div>
 
 				<div className="column is-5" id="piano-card">
@@ -151,12 +140,13 @@ function Home() {
 			<footer class="footer">
 				<div class="content has-text-centered">
 					<p>
-						<strong>Skyline Studios</strong>  <a href="https://jgthms.com">Joe Williams</a>. Other Footer Info 
-      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+						<strong>Skyline Studios  </strong>   Phone:
+      <a href="http://opensource.org/licenses/mit-license.php"> 801-318-9057</a>| Email: 
+     <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">joe@joewilliamsmusic.com</a>| 
+	 <a href="#top"> Back to Top</a>
     </p>
 
-	<a href="#top"> Back to Top</a>
+	
 
 
 				</div>
