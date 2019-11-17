@@ -15,15 +15,17 @@ function CalendarPage() {
       {/* use "className='form-color'" for gray background */}
         <section className='hero'>
           <div className= 'hero-body'>
-
-            <div className= 'cal-container'>
+            <div className= 'container calendar' id="cal-div">
+            
               <CalendarContainer />
             </div>
-
-            <div className= 'apt-container'>
+{/* AptForm should have the style changes to make form a little better for devices. - Joe */}
+            {/* <div className= 'apt-container'>
               <AptContainer />
+            </div> */}
+            <div id="apt-div"> 
+            <AptForm />
             </div>
-
           </div>
         </section>
       </div>
