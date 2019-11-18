@@ -47,12 +47,13 @@ function Navbar() {
                                 Bookings
                     </Link>
 
+{/* Joe - Schedule Studio Time and Schedule Lesson I changed to /register from /submit request to go to register page */}
                             <div className="navbar-dropdown">
-                                <Link className="navbar-item" to="/submitrequest">
+                                <Link className="navbar-item" to="/register">
                                     Schedule Studio Time
 								</Link>
                                 <hr className="navbar-divider"></hr>
-                                <Link className="navbar-item" to="/submitrequest">
+                                <Link className="navbar-item" to="/register">
                                     Schedule Lesson
                                 </Link>
 

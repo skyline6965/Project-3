@@ -7,8 +7,6 @@ body {
     background:hsl(0, 0%, 7%);
   }
 
-
-
   .hero-body {
       opacity: .8;
       text-align: center;
@@ -107,6 +105,18 @@ body {
     box-shadow: 4px 4px 2px rgb(46, 46, 46);
   
   }
+  #studio-pic2 {
+    background: black url(/images/Piano_1b.jpg);
+    border-radius: 2px;
+    height: 450px;
+    /* width: 100%; */
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(39, 39, 39);
+    box-shadow: 4px 4px 2px rgb(46, 46, 46);
+  
+  }
+
   #studio-title {
       color: black;
       margin: 10px 0px 0px;
@@ -120,24 +130,56 @@ body {
       font-size: 25px;
   }
   #studio-text2 {
-      font-size: 30px;
+      font-size: 50px;
       color: black;
+      margin: 30px 0px 20px;
   }
-  #studio-pic1 {
-      background: black url(/images/Piano_2.jpg);
-      
+  #studio-text3 {
+    font-size: 50px;
+    color: black;
+    margin: 0px 0px 20px;
+}
+  #studio-p1 {
+    font-size: 27px;
+    color: #363636;
+    font-weight: bold;
   }
+
+#studio-p2 {
+  font-size: 27px;
+  color: #363636;
+  font-weight: bold;
+}
+#studio-p3 {
+  font-size: 15px;
+  color: #363636;
+  font-weight: bold;
+}
+
   #studio-button{
       margin: -45px 10px 30px 10px;
   }
+#studio-time {
+  margin: 0 0 40px 0;
+}
+  .recording-subtitle {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+  }
 
+  .recording-p1 {
+    font-size: 23px;
+    color: #808080;
+    font-weight: bold;
+  }
   /* Joe Horizontal Slideshow */
 
   .tech-slideshow {
     height: 200px;
     /* max-width: 800px; */
     width: 100%;
-    margin: 0 0;
+    margin: 80px 0px 20px;
     position: relative;
     /* overflow: hidden; */
     transform: translate3d(0, 0, 0);
